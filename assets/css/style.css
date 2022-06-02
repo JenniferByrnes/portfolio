@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #fce138;
-  --secondary-color: #024e76;
-  --tertiary-color: var(#39a6b2);
+  --primary-color: yellow;
+  --secondary-color: green;
+  --tertiary-color: red;
 }
 
 * {
@@ -274,10 +274,6 @@ section {
   margin: 15px;
 }
 
-.contact-info iframe {
-  height: 400px;
-}
-
 .contact-info div {
   color: white;
 }
@@ -312,26 +308,11 @@ section {
   outline: none;
 }
 
-.contact-form button {
-  width: 100%;
-  border: none;
-  background: var(--primary-color);
-  color: var(--secondary-color);
-  text-align: center;
-  padding: 15px 0;
-  font-size: 16px;
-  border-radius: 10px;
-}
-
 .contact-form button:hover {
   color: var(--primary-color);
   background: var(--tertiary-color);
 }
 
-.contact-info a {
-  color: var(--primary-color);
-}
-*/
 /* REACH OUT STYLES END */
 
 /* UTILITIES */
@@ -375,7 +356,7 @@ section {
     width: 100%;
   }
 
-  .hero-promo, .hero-form {
+  .hero-promo {
     width: 100%;
   }
   
@@ -391,37 +372,12 @@ section {
     flex: 0 70%;
   }
   
-  .contact-info iframe{
-    flex: 1 100%;
-  }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
   section {
     padding: 30px 15px;
-  }
-
-  .step h3 {
-    flex: 1 100%;
-    text-align: center;
-  }
-
-  .step-info {
-    flex: 2 100%;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .step-img {
-    flex: 0 32%;
-    margin-right: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-
-  .step-text {
-    flex: 100%;  
   }
 
   .project-bio h3, .project-bio h4 {
@@ -431,9 +387,6 @@ section {
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-  .hero-form button {
-    width: 100%;
-  }
 
   .section-title {
     width: 95%;
@@ -455,7 +408,4 @@ section {
     flex: 0 100%;
   }
 
-  .contact-form {
-    order: 3;
-  }
 }
