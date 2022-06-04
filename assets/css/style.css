@@ -117,6 +117,7 @@ section {
   background-position: 80%;
 }
 
+/* Made this into a flexbox with img and verbiage as children */
 .hero-promo {
   display: flex;
   justify-content: space-between;
@@ -141,52 +142,7 @@ section {
 #hero-verbiage {
   flex-basis: 50%;
 }
-/*
-.hero-form button:hover {
-  background-color: var(--tertiary-color);  
-}
 
-.hero-form h3 {
-  font-size: 24px;
-  margin: 0;
-}
-.hero-form p {
-  margin: 5px 0 15px 0;
-}
-
-.form-input {
-  border: 1px solid var(--secondary-color);
-  display: block;
-  padding: 7px 15px;
-  font-size: 16px;
-  color: var(--secondary-color);
-  width: 100%;
-  margin-bottom: 15px; 
-  border-radius: 10px;
-  background-color: rgba(255,255,255, 0.75);
-}
-
-.form-input:focus {
-  background-color: rgba(255,255,255, 1);
-  outline: none;
-}
-
-.hero-form label {
-  margin: 0 5px;
-}
-
-.hero-form button {
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 10px;
-} 
-*/
-/* HERO STYLES END */
-
-/* start here 
 /* SECTION TITLE STYLES START */
 .section-title {
   font-size: 48px;
@@ -207,7 +163,7 @@ section {
 }
 /* SECTION TITLE STYLES END */
 
-/* WHAT WE DO STYLES */
+/* ABOUT ME STYLES */
 
 #about-me p {
   line-height: 1.7;
@@ -217,9 +173,9 @@ section {
   font-size: 20px;
   text-align: center;
 }
-/* WHAT YOU DO STYLES END */
+/* ABOUT ME STYLES END */
 
-/* My Projects */
+/* MY PROJECTS */
 .projects {
   width: 100%;
   margin: 0 auto;
@@ -258,9 +214,15 @@ section {
   font-size: 17px;
 }
 
+/* Adding grow on hover functionality */
 .project:hover {
-  color: var(--primary-color);
-  background: var(--tertiary-color);
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
+}
+
+#project1:active {
+  href:https://lernantino.github.io/run-buddy/
 }
 
 /* My Projects STYLES END */
