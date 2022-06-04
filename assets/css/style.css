@@ -15,7 +15,6 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-
 /* HEADER / NAV BAR STYLES START */
 
 header {
@@ -54,13 +53,12 @@ header nav {
 header nav ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
   list-style: none;
 }
 
 header nav ul li a {
-  padding: 10px 15px;
+  padding: 5px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -74,8 +72,6 @@ header nav ul li a:hover {
 }
 
 /* HEADER / NAVBAR STYLES END */
-
-
 
 /* FOOTER STYLES START */
 footer {
@@ -181,7 +177,7 @@ section {
 */
 /* HERO STYLES END */
 
-
+/* start here 
 /* SECTION TITLE STYLES START */
 .section-title {
   font-size: 48px;
