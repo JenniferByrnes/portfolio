@@ -16,7 +16,6 @@ body {
 }
 
 /* HEADER / NAV BAR STYLES START */
-
 header {
   padding: 20px 35px;
   background-color: var(--tertiary-color);
@@ -70,13 +69,12 @@ header nav ul li a:hover {
   border-radius: 15px;
   text-shadow: none;
 }
-
 /* HEADER / NAVBAR STYLES END */
 
 /* FOOTER STYLES START */
 footer {
   background: var(--primary-color);
-  padding: 40px 35px;
+  padding: 5px 35px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -120,6 +118,7 @@ section {
 /* Made this into a flexbox with img and verbiage as children */
 .hero-promo {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   text-align: right;
   margin: 0.5%;
@@ -128,17 +127,19 @@ section {
   line-height: 1.2;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
+/* Round edges of photo */
 #hero-photo {
   border-radius: 25px;
 }
 
+/* Set color and size of hero title */
 .hero-promo h2 {
   font-style: italic;
   font-size: 55px;
   color: var(--primary-color);
 }
 
+/* Sized the words on the hero */
 #hero-verbiage {
   flex-basis: 50%;
 }
@@ -164,7 +165,6 @@ section {
 /* SECTION TITLE STYLES END */
 
 /* ABOUT ME STYLES */
-
 #about-me p {
   line-height: 1.7;
   color: var(--tertiary-color);
@@ -220,11 +220,6 @@ section {
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1); 
 }
-
-#project1:active {
-  href:https://lernantino.github.io/run-buddy/
-}
-
 /* My Projects STYLES END */
 
 /* REACH OUT STYLES START */
@@ -238,22 +233,19 @@ section {
 
 .contact-info {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  color: white;
   flex-wrap: wrap;
 }
 
 .contact-info > * {
-  flex: 1;
   margin: 15px;
-}
-
-.contact-info div {
-  color: white;
 }
 
 .contact-info h3 {
   color: var(--primary-color);
   font-size: 32px;
+  justify-content: flex-end;
 }
 
 .contact-info p, .contact-info address {
@@ -262,30 +254,6 @@ section {
   font-size: 16px;
   font-style: normal;
 }
-/*
-.contact-form input, .contact-form textarea {
-  border: 1px solid var(--secondary-color);
-  display: block;
-  padding: 7px 15px;
-  font-size: 16px;
-  color: var(--secondary-color);
-  width: 100%;
-  margin-bottom: 15px;
-  margin-top: 5px;
-  border-radius: 10px;
-  background-color: rgba(255,255,255, 0.75);
-}
-
-.contact-form input:focus, .contact-form textarea:focus {
-  background-color: rgba(255,255,255, 1);
-  outline: none;
-}
-
-.contact-form button:hover {
-  color: var(--primary-color);
-  background: var(--tertiary-color);
-}
-
 /* REACH OUT STYLES END */
 
 /* UTILITIES */
