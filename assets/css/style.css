@@ -130,6 +130,7 @@ section {
 /* Round edges of photo */
 #hero-photo {
   border-radius: 25px;
+  max-width: 100%;
 }
 
 /* Set color and size of hero title */
@@ -303,6 +304,7 @@ section {
   
   .hero-promo {
     text-align: center;
+    display: block;
   }
 
   .section-title {
@@ -347,6 +349,19 @@ section {
 
   .contact-info > * {
     flex: 0 100%;
+  }
+
+}
+
+/* MEDIA QUERY FOR Galaxy Fold AND SMALLER */
+@media screen and (max-width: 359px) {
+
+  .hero-promo h2, .section-title{
+    font-size: 35px;
+  }
+
+  .contact-info h3 {
+    font-size: 25px;
   }
 
 }
