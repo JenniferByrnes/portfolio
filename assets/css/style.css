@@ -151,13 +151,19 @@ section {
 /* SECTION TITLE STYLES END */
 
 /* ABOUT ME STYLES */
+
+#about-me {
+  background-color: var(--tertiary-color);
+}
+
 #about-me p {
   line-height: 1.7;
-  color: var(--tertiary-color);
+  color: var(--primary-color);
   width: 80%;
   margin: 0 auto;
   font-size: 20px;
   text-align: center;
+
 }
 /* ABOUT ME STYLES END */
 
