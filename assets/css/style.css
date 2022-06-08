@@ -1,3 +1,4 @@
+/* set color scheme */
 :root {
   --primary-color: #dbc57d;
   --secondary-color: #658c67;
@@ -10,6 +11,7 @@
   padding: 0;
 }
 
+/* Set default color and fonts */
 body {
   color: var(--tertiary-color);
   font-family: Helvetica, Arial, sans-serif;
@@ -37,18 +39,20 @@ header h1 {
   margin: 0;
   font-size: 36px;
   color: var(--primary-color);
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/* remove underline and set color for header */
 header a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--tertiary-color);
 }
 
+/* set margin for navigation links */
 header nav {
   margin: 7px 0;
 }
 
+/* style navigation elements */
 header nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -56,18 +60,18 @@ header nav ul {
   list-style: none;
 }
 
+/* style navigation individual links */
 header nav ul li a {
   padding: 5px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/* change color on hover */
 header nav ul li a:hover {
   background: var(--primary-color);
   color: var(--secondary-color);
   border-radius: 15px;
-  text-shadow: none;
 }
 /* HEADER / NAVBAR STYLES END */
 
@@ -84,7 +88,6 @@ footer {
 footer h4 {
   color: var(--secondary-color);
 }
-
 /* END FOOTER STYLES */
 
 /* STYLE ALL SECTION TAGS */
@@ -104,7 +107,7 @@ section {
   background-position: 80%;
 }
 
-/* Made this into a flexbox with img and verbiage as children */
+/* Hero elemnts are in flexbox */
 .hero-promo {
   display: flex;
   flex-wrap: wrap;
@@ -116,10 +119,12 @@ section {
   line-height: 1.2;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-/* Round edges of photo */
+
+/* Round edges of photo and add shadow */
 #hero-photo {
   border-radius: 25px;
   max-width: 100%;
+  box-shadow: -10px 10px #385c7c;
 }
 
 /* Set color and size of hero title */
@@ -133,6 +138,7 @@ section {
 #hero-verbiage {
   flex-basis: 50%;
 }
+/* HERO SECTION END */
 
 /* SECTION TITLE STYLES START */
 .section-title {
@@ -151,7 +157,6 @@ section {
 /* SECTION TITLE STYLES END */
 
 /* ABOUT ME STYLES */
-
 #about-me {
   background-color: var(--tertiary-color);
 }
@@ -163,7 +168,6 @@ section {
   margin: 0 auto;
   font-size: 20px;
   text-align: center;
-
 }
 /* ABOUT ME STYLES END */
 
@@ -172,11 +176,14 @@ section {
   background: var(--primary-color);
 }
 
+/* PROJECT HEADING */
 #my-projects h2 {
   border-color: var(--tertiary-color);
 }
 
-.projects {
+/* ALL PROJECTS */
+/* projects are in flexbox for differing screen sizes */
+#projects {
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -184,6 +191,7 @@ section {
   justify-content: space-around;
 }
 
+/* EACH PROJECT */
 .project {
   margin: 20px;
   flex: 1;
@@ -191,6 +199,7 @@ section {
   color: var(--primary-color);
 }
 
+/* Image needs to be 100% for small screens */
 .project img {
   width: 100%;
 }
@@ -231,6 +240,7 @@ section {
   color: var(--primary-color);
 }
 
+/* Contact info in flexbox for differing screen sizes */
 .contact-info {
   display: flex;
   justify-content: center;
@@ -248,7 +258,7 @@ section {
   justify-content: flex-end;
 }
 
-.contact-info p, .contact-info address {
+.contact-info address {
   margin: 20px 0;
   line-height: 1.5;
   font-size: 16px;
@@ -306,6 +316,10 @@ section {
     display: block;
   }
 
+  #hero-photo {
+    box-shadow: none;
+  }
+
   .section-title {
     width: 80%;
   }
@@ -313,7 +327,6 @@ section {
   .project {
     flex: 0 70%;
   }
-  
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -349,7 +362,6 @@ section {
   .contact-info > * {
     flex: 0 100%;
   }
-
 }
 
 /* MEDIA QUERY FOR Galaxy Fold AND SMALLER */
@@ -362,5 +374,5 @@ section {
   .contact-info h3 {
     font-size: 25px;
   }
-
 }
+/* CSS File end */
