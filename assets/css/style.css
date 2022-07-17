@@ -194,9 +194,12 @@ section {
 /* EACH PROJECT */
 .project {
   margin: 20px;
-  flex: 1;
+  flex: 0 30%;
   background: var(--tertiary-color);
   color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* Image needs to be 100% for small screens */
