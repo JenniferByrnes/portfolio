@@ -17,3 +17,4 @@ Crafted with ❤️ by Jennifer Byrnes
 # Screenshot
 
 ![Screen Shot](./assets/images/PortfolioScreen.png)
+
