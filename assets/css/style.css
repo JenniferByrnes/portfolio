@@ -73,6 +73,7 @@ header nav ul li a:hover {
   color: var(--secondary-color);
   border-radius: 15px;
 }
+
 /* HEADER / NAVBAR STYLES END */
 
 /* FOOTER STYLES START */
@@ -88,6 +89,7 @@ footer {
 footer h4 {
   color: var(--secondary-color);
 }
+
 /* END FOOTER STYLES */
 
 /* STYLE ALL SECTION TAGS */
@@ -138,6 +140,7 @@ section {
 #hero-verbiage {
   flex-basis: 65%;
 }
+
 /* HERO SECTION END */
 
 /* SECTION TITLE STYLES START */
@@ -154,6 +157,7 @@ section {
 .secondary-border {
   border-color: var(--tertiary-color);
 }
+
 /* SECTION TITLE STYLES END */
 
 /* ABOUT ME STYLES */
@@ -169,6 +173,7 @@ section {
   font-size: 20px;
   text-align: center;
 }
+
 /* ABOUT ME STYLES END */
 
 /* MY PROJECTS */
@@ -228,10 +233,13 @@ section {
 
 /* Adding grow on hover functionality */
 .project:hover {
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1); 
+  -ms-transform: scale(1.1);
+  /* IE 9 */
+  -webkit-transform: scale(1.1);
+  /* Safari 3-8 */
+  transform: scale(1.1);
 }
+
 /* My Projects STYLES END */
 
 /* REACH OUT STYLES START */
@@ -246,10 +254,11 @@ section {
 /* Contact info in flexbox for differing screen sizes */
 .contact-info-div {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
 }
 
-.contact-info-div > div {
+.contact-info-div>div {
   margin: 10px;
 }
 
@@ -260,7 +269,7 @@ section {
   color: white;
 }
 
-.contact-info > * {
+.contact-info>* {
   display: flex;
 }
 
@@ -279,14 +288,19 @@ section {
 .contact-links {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
   color: white;
 }
 
-.contact-links > * {
+.contact-links>* {
   display: flex;
   line-height: 1.5;
   font-size: 16px;
+  justify-content: center;
+  text-align: center;
 }
+
 /* REACH OUT STYLES END */
 
 /* UTILITIES */
@@ -333,7 +347,7 @@ section {
   .hero-promo {
     width: 100%;
   }
-  
+
   .hero-promo {
     text-align: center;
     display: block;
@@ -346,9 +360,25 @@ section {
   .section-title {
     width: 80%;
   }
-  
+
   .project {
     flex: 0 70%;
+  }
+
+  .contact-info>* {
+    justify-content: center;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-links {
+    align-items: center;
+  }
+
+  address {
+    text-align: center;
   }
 }
 
@@ -358,7 +388,8 @@ section {
     padding: 30px 15px;
   }
 
-  .project-bio h3, .project-bio h4 {
+  .project-bio h3,
+  .project-bio h4 {
     display: block;
   }
 }
@@ -378,19 +409,14 @@ section {
     flex: 0 100%;
   }
 
-  .contact-info {
-    text-align: center;
-  }
 
-  .contact-info > * {
-    flex: 0 100%;
-  }
 }
 
 /* MEDIA QUERY FOR Galaxy Fold AND SMALLER */
 @media screen and (max-width: 359px) {
 
-  .hero-promo h2, .section-title{
+  .hero-promo h2,
+  .section-title {
     font-size: 35px;
   }
 
@@ -398,4 +424,5 @@ section {
     font-size: 25px;
   }
 }
+
 /* CSS File end */
