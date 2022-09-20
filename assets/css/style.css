@@ -244,28 +244,48 @@ section {
 }
 
 /* Contact info in flexbox for differing screen sizes */
-.contact-info {
+.contact-info-div {
   display: flex;
   justify-content: center;
+}
+
+.contact-info-div > div {
+  margin: 10px;
+}
+
+.contact-info {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   color: white;
-  flex-wrap: wrap;
 }
 
 .contact-info > * {
-  margin: 15px;
+  display: flex;
 }
 
 .contact-info h3 {
   color: var(--primary-color);
   font-size: 28px;
-  justify-content: flex-end;
 }
 
 .contact-info address {
-  margin: 20px 0;
   line-height: 1.5;
   font-size: 16px;
   font-style: normal;
+}
+
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.contact-links > * {
+  display: flex;
+  line-height: 1.5;
+  font-size: 16px;
 }
 /* REACH OUT STYLES END */
 
